@@ -1,0 +1,5 @@
+/venv
+uptrader/uptrader/__pycache__
+uptrader/menu_app/__pycache__
+uptrader/menu_app/migrations
+

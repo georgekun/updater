@@ -1,0 +1,26 @@
+{% load menu_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>{{ current_menu_name }}</title>
+</head>
+<body>
+  
+
+    <div class="wrapper">
+        <nav>
+            <h1>Вы находитесь в меню: {{ current_menu_name }}</h1>
+            <p><a href="/menu_app/menu/main">Main menu</a></p>
+        </nav>
+       
+        <div class="menu">
+            {% draw_menu current_menu_name %}
+        </div>
+    </div>
+</body>
+</html>
